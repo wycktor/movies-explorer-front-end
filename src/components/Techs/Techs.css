@@ -1,0 +1,134 @@
+.techs {
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.techs__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.techs__title {
+  max-width: 1140px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.88px;
+  border-bottom: 1px solid #000;
+  margin: 0 auto 90px;
+  padding: 0 0 20px;
+}
+
+.techs__head {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-align: center;
+  margin: 90px auto 0;
+}
+
+.techs__text {
+  max-width: 460px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+  text-align: center;
+  margin: 26px auto 0;
+}
+
+.techs__list {
+  display: grid;
+  grid-template-columns: repeat(7, 90px);
+  grid-template-rows: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 100px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.techs__item {
+  max-width: 90px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: -0.56px;
+  text-align: center;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  padding: 22px 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .techs {
+    padding: 0;
+  }
+
+  .techs__container {
+    max-width: 668px;
+    padding: 90px 0;
+  }
+
+  .techs__text {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 440px;
+    margin-top: 15px;
+  }
+
+  .techs__list {
+    grid-template-columns: repeat(7, 84px);
+    grid-template-rows: 57px;
+    margin-top: 80px;
+  }
+
+  .techs__item {
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs {
+    background: #fff;
+  }
+
+  .techs__container {
+    max-width: 284px;
+  }
+
+  .techs__title {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+  }
+
+  .techs__head {
+    font-size: 30px;
+    letter-spacing: -1.2px;
+    margin-top: 50px;
+  }
+
+  .techs__text {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.44px;
+    margin-top: 15px;
+  }
+
+  .techs__list {
+    grid-template-columns: repeat(2, 84px);
+    margin-top: 50px;
+  }
+
+  .techs__item {
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+}

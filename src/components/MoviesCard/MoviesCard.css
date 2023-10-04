@@ -1,0 +1,106 @@
+.card {
+  background-color: #fdfdfd;
+  box-shadow: 0 16px 24px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.card__image {
+  width: 270px;
+  height: 151px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  padding: 0;
+}
+
+.card__container {
+  min-height: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px 12px 10px 10px;
+}
+
+.card__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__title {
+  max-width: 206px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 24px 0 0;
+}
+
+.card__button {
+  display: flex;
+  align-items: center;
+}
+
+.card__saved-button {
+  height: 16px;
+  width: 16px;
+  border: none;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.05);
+  padding: 0;
+}
+
+.card__saved-button:hover {
+  opacity: 0.7;
+}
+
+.card__saved-button_inactive {
+  background: #f9f9f9;
+}
+
+.card__saved-button_active {
+  background: #2be080;
+}
+
+.card__saved-button_delete {
+  width: 16px;
+  height: 16px;
+  box-shadow: none;
+  background: #fff url(../../images/button-delete.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card__duration {
+  color: #a0a0a0;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 339px;
+  }
+
+  .card__image {
+    height: 190px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card {
+    width: 300px;
+  }
+
+  .card__image {
+    max-width: 100%;
+    max-height: 168px;
+  }
+}
