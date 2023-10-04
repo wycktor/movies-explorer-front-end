@@ -1,0 +1,142 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 0;
+}
+
+.auth__form {
+  max-width: 396px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.auth__logo {
+  transition: opacity 0.5s ease;
+  justify-self: start;
+}
+
+.auth__logo:hover {
+  opacity: 0.7;
+}
+
+.auth__form-title {
+  max-width: 396px;
+  width: 100%;
+  color: #000;
+  font-style: normal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 35px 0 40px;
+}
+
+.auth__button {
+  width: 100%;
+  min-height: 45px;
+  min-width: 255px;
+  position: relative;
+  box-shadow: none;
+  border-width: 0;
+  color: #fff;
+  background: #ff6838;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+  margin: 70px 0 15px;
+  padding: 15px 125px;
+}
+
+.auth__button:hover {
+  opacity: 0.8;
+}
+
+.auth__button-login {
+  margin-top: 160px;
+}
+
+.auth__sign {
+  max-width: 396px;
+  width: 100%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.auth__sign-title {
+  color: #a0a0a0;
+  margin: 0;
+}
+
+.auth__sign-link {
+  color: #ff6838;
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.auth__sign-link:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1279px) {
+  .auth {
+    padding: 230px 0 0 10px;
+  }
+
+  .auth__button {
+    margin-top: 75px;
+  }
+
+  .auth__button-login {
+    margin-top: 165px;
+  }
+
+  .auth__sign {
+    margin-bottom: 230px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .auth {
+    padding: 55px 30px 0;
+  }
+
+  .auth__logo {
+    margin-left: 5px;
+  }
+
+  .auth__form-link {
+    align-self: center;
+  }
+
+  .auth__form-title {
+    text-align: center;
+    margin: 45px 0 80px 10px;
+  }
+
+  .auth__button {
+    font-size: 12px;
+    padding: 15px 30px;
+    margin: 160px 0 15px;
+  }
+
+  .auth__button-login {
+    margin-top: 255px;
+  }
+
+  .auth__sign {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+}
